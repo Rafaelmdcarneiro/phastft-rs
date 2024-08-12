@@ -1,0 +1,16 @@
+[package]
+name = "pyphastft"
+version = "0.2.1"
+edition = "2021"
+authors = ["Saveliy Yusufov", "Shnatsel"]
+license = "MIT OR Apache-2.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "pyphastft"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.21.2" }
+numpy = "0.21.0"
+phastft = { path = ".." }
